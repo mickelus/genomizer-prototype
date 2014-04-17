@@ -221,50 +221,17 @@
 
 		<script id="builder-content" type="text/html">
 			<table class="table">
-				
-					<td>
-						
-					</td>
-					<td>
-						<div class="btn-group">
-							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-							type
-							<span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu">
-								<li><a href="#">author</a></li>
-								<li><a href="#">filename</a></li>
-								<li class="divider"></li>
-								<li><a href="#">gender</a></li>
-								<li><a href="#">species</a></li>
-								<li><a href="#">part</a></li>
-							</ul>
-						</div>
-					</td>
-					<td>
-						
-					</td>
-				</tr>
 				<tr>
 					<td>
-						<div class="btn-group">
-							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-							AND
-							<span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu">
-								<li><a href="#">AND</a></li>
-								<li><a href="#">OR</a></li>
-							</ul>
-						</div>
+						
 					</td>
 					<td>
 						<div class="btn-group">
-							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-							type
+							<button type="button" class="btn btn-default dropdown-toggle type-button" data-toggle="dropdown">
+							<span data-bind="label">type</span>
 							<span class="caret"></span>
 							</button>
-							<ul class="dropdown-menu">
+							<ul class="dropdown-menu type-dropdown">
 								<li><a href="#">author</a></li>
 								<li><a href="#">filename</a></li>
 								<li class="divider"></li>
@@ -275,11 +242,44 @@
 						</div>
 					</td>
 					<td>
-						
+						<input type="text" class="form-control" placeholder="Text input">
 					</td>
 				</tr>
-
 			</table>
+		</script>
+
+		<script id="builder-row" type="text/html">
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span data-bind="label">AND</span>
+					<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="#">AND</a></li>
+						<li><a href="#">OR</a></li>
+					</ul>
+				</div>
+			</td>
+			<td>
+				<div class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span data-bind="label">type</span>
+					<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu type-dropdown">
+						<li><a href="#">author</a></li>
+						<li><a href="#">filename</a></li>
+						<li class="divider"></li>
+						<li><a href="#">gender</a></li>
+						<li><a href="#">species</a></li>
+						<li><a href="#">part</a></li>
+					</ul>
+				</div>
+			</td>
+			<td>
+				<input type="text" class="form-control" placeholder="Text input">
+			</td>
 		</script>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

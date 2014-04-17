@@ -49,8 +49,16 @@ body {
 	width: 100px;
 }
 
-#builder-container td:nth-child(1) .btn-group, #builder-container td:nth-child(1) button {
+#builder-container td:nth-child(2) {
+	width: 100px;
+}
+
+#builder-container .btn-group, #builder-container button {
 	width: 100%;
+}
+
+#builder-container tr {
+	border: none;
 }
 
 .page-header {
