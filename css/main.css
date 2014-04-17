@@ -103,7 +103,7 @@ body {
 	width: 100%;
 }
 
-.btn-group-vertical button {
+.btn-group-vertical .btn {
 	text-align: left;
 }
 
