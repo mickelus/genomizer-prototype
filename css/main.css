@@ -92,6 +92,30 @@ body {
 	background-color: #f5f5f5;
 }
 
+.panel-main .panel-heading .glyphicon {
+	top: 2px;
+}
+
+.file-table th:nth-child(1), .file-table td:nth-child(1) {
+	width: 5%;
+	padding-left: 15px;
+}
+
+.file-table th:nth-child(2), .file-table td:nth-child(2) {
+	width: 65%;
+}
+
+.file-table th:nth-child(3), .file-table td:nth-child(3) {
+	width: 20%;
+	text-align: right;
+}
+
+.file-table th:nth-child(4), .file-table td:nth-child(4) {
+	width: 10%;
+	text-align: right;
+	padding-right: 15px;
+}
+
 .btn-group-vertical .caret {
 	float: right;
 	margin-top: 9px;

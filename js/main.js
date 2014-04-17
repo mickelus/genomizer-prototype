@@ -45,3 +45,23 @@ $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
    return false;
  
 });
+
+$(".file-table tbody").html($("#fileset1").html());
+
+$("#workspace-link").click(function() {
+	$("#search-link").find(".glyphicon").css("opacity", 1);
+	$("#workspace-link").find(".glyphicon").css("opacity", 0);
+	$("#workspace-link").find(".text").css("text-decoration", "underline");
+	$("#search-link").find(".text").css("text-decoration", "none");
+
+	$(".file-table tbody").html($("#fileset2").html());
+})
+
+$("#search-link").click(function() {
+	$("#search-link").find(".glyphicon").css("opacity", 0);
+	$("#workspace-link").find(".glyphicon").css("opacity", 1);
+	$("#search-link").find(".text").css("text-decoration", "underline");
+	$("#workspace-link").find(".text").css("text-decoration", "none");
+
+	$(".file-table tbody").html($("#fileset1").html());
+})
