@@ -1,6 +1,15 @@
 $('#history-button').popover({
 	html: true,
-	content: "((arpupulus puparprisisla<strong class=\"text-danger\">[species]</strong>) <strong class=\"text-primary\">AND</strong> Yuri<strong class=\"text-danger\">[author]</strong>) <strong class=\"text-primary\">AND</strong class=\"text-danger\"> female<strong class=\"text-danger\">[sex]</strong>",
+	content: $("#history-content").html(),
 	title: "Previous queries",
-	placement: "bottom"
+	placement: "bottom",
+	container: "#history-container"
+})
+
+$('#builder-button').popover({
+	html: true,
+	content: $("#builder-content").html(),
+	title: "Query builder",
+	placement: "bottom",
+	container: "#builder-container"
 })
