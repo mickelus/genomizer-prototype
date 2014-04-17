@@ -1,5 +1,5 @@
 body {
-	background-color: #f4f4f4;
+	background-color: #e3e6e8;
 }
 
 .page-container {
@@ -24,8 +24,16 @@ body {
 	top: 2px;
 }
 
+.history-dropdown {
+	width: 738px;
+}
+
 .user {
 	font-size: 0.8em;
+}
+
+.workspace-dropdown .glyphicon {
+	margin-right: 10px;
 }
 
 .panel-heading {
