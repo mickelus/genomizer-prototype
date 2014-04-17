@@ -17,7 +17,9 @@
 
 				<div class="col-lg-8"> <!-- search col -->
 					<div class="panel panel-default">
-						<div class="panel-body">
+						<div class="panel-body search-body">
+							<div id="history-container"></div>
+							<div id="builder-container"></div>
 							<div class="input-group">
 								<input type="text" class="form-control">
 								<span class="input-group-btn">
@@ -96,6 +98,7 @@
 									</tr>
 								</thead>
 								<tbody>
+									<tr style="display: none;"></tr>
 									<tr>
 										<td><input type="checkbox"></td>
 										<td>Fly thing asd</td>
@@ -246,6 +249,96 @@
 			</div><!-- /.modal-dialog -->
 		</div><!-- /.modal -->		
 		
+		<!-- popover contents -->
+		<script id="history-content" type="text/html">
+			<table class="table table-hover">
+				
+					<td>
+						((arpupulus puparprisisla<strong class="text-danger">[species]</strong>) <strong class="text-primary">AND</strong>
+						Yuri<strong class="text-danger">[author]</strong>) <strong class="text-primary">AND</strong class="text-danger">
+						female<strong class="text-danger">[sex]</strong>
+					</td>
+					<td class="text-muted date-col">
+						15:32 5 jan -14 
+					</td>
+				</tr>
+				<tr>
+					<td>
+						((arpupulus puparprisisla<strong class="text-danger">[species]</strong>) <strong class="text-primary">AND</strong>
+						Yuri<strong class="text-danger">[author]</strong>) <strong class="text-primary">AND</strong class="text-danger">
+						male<strong class="text-danger">[sex]</strong>
+					</td>
+					<td class="text-muted date-col">
+						15:33 5 jan -14 
+					</td>
+				</tr>
+
+			</table>
+		</script>
+
+		<script id="builder-content" type="text/html">
+			<table class="table">
+				
+					<td>
+						
+					</td>
+					<td>
+						<div class="btn-group">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							type
+							<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#">author</a></li>
+								<li><a href="#">filename</a></li>
+								<li class="divider"></li>
+								<li><a href="#">gender</a></li>
+								<li><a href="#">species</a></li>
+								<li><a href="#">part</a></li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="btn-group">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							AND
+							<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#">AND</a></li>
+								<li><a href="#">OR</a></li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<div class="btn-group">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							type
+							<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#">author</a></li>
+								<li><a href="#">filename</a></li>
+								<li class="divider"></li>
+								<li><a href="#">gender</a></li>
+								<li><a href="#">species</a></li>
+								<li><a href="#">part</a></li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						
+					</td>
+				</tr>
+
+			</table>
+		</script>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	</body>
 </html>
