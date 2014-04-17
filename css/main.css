@@ -115,3 +115,11 @@ body {
 .btn-file.new {
 	background-color: #EAF1F7;
 }
+
+
+.workspace-link-container {
+	position: absolute;
+	top: 6px;
+	right: 21px;
+	
+}
