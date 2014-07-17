@@ -152,3 +152,7 @@ a {
 	color: black;
 	
 }
+
+.actionbar .glyphicon {
+	top: 1px;
+}
